@@ -44,4 +44,21 @@ public class EstudiantePresencial extends Estudiante{
         return matriculaPresencial;
     }
     
+        @Override
+    public String toString (){
+        String cadena = String.format("Apellidos Estudiante %s\n"
+                +"Identificacion %s" 
+                +"Valor Matricula %.2f",
+                apellidosEstudiante
+                ,obtenerIdentificacionEstudiante(),
+                costoCredito,obtenerMatriculaPresencial());
+          
+             //sale cero toma el valor por defecto y no se le esta mandando valor 
+                return cadena;
+    }
+    //Aqui se se extiende de una super clase que contiene un tostring y dentro de la hijaclase se llamara nuevamente
+    
+    
+    
+    
 }
