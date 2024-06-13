@@ -7,7 +7,8 @@ public class EstudianteDistancia extends Estudiante{
     double costoAsignatura;
     double matriculaDistancia;
     
-        
+    // Se ocupa los atributos de la clase padre y se hace un constructor en la clase hija añadiendo nuevos atributos 
+    
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){
         super(n, ap, iden, e);
