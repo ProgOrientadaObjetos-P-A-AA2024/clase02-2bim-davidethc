@@ -1,10 +1,17 @@
 package paquete2;
 
+
+
+
+//Porque esta clase se hereda de una super clase entonces aqui deberia haber un cosntructor
+
 public class EstudianteDistancia extends Estudiante{
     
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
+    
+    
     
     
     // 2.  Método establecerNumeroAsginaturas(numero: Real)

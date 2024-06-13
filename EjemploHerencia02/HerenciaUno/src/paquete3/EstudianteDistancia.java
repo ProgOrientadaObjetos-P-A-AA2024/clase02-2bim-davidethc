@@ -41,5 +41,32 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
+    /*
+    @Override
+    public String toString (){
+        String cadena = String.format("Nombre estudiante:%s\n Numero asignaturas %d\n"
+                +"Valor de la asignatura %.2f" 
+                +"Valor matricula %.2f",obtenerNombresEstudiante()
+                ,numeroAsignaturas,
+                costoAsignatura,obtenerMatriculaDistancia());
+          
+             //sale cero toma el valor por defecto y no se le esta mandando valor 
+                return cadena;
+    }
+*/
+    @Override
+    public String toString (){
+        String cadena = String.format("%s\n Numero asignaturas %d\n"
+                +"Valor de la asignatura %.2f" 
+                +"Valor matricula %.2f",super.toString()
+                ,numeroAsignaturas,
+                costoAsignatura,obtenerMatriculaDistancia());
+          
+             //sale cero toma el valor por defecto y no se le esta mandando valor 
+                return cadena;
+    }
+    //Aqui se se extiende de una super clase que contiene un tostring y dentro de la hijaclase se llamara nuevamente
+    
+    
 
 }

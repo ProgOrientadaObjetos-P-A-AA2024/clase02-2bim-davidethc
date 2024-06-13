@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -21,8 +21,12 @@ public class Ejecutor {
         
         EstudianteDistancia estDistancia = new EstudianteDistancia(nombre, 
                 apellido, identificacion, edad);
+        estDistancia.establecerNumeroAsginaturas(5);
+        estDistancia.establecerCostoAsignatura(100);
+        estDistancia.calcularMatriculaDistancia();
         
         System.out.println(estDistancia);
+        
                 
         
     }
